@@ -13,6 +13,6 @@ jobs:
       - name: Adds terraform docs to PR
         uses: terraform-docs/gh-actions@main
         with:
-          working-dir: ../
+          working-dir: ./
           config-file: ./docs/.terraform-docs.yml
           git-push: "true"
