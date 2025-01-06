@@ -1,5 +1,7 @@
 # Terraform OCI Registries
 
+[![Lints](https://github.com/abarrak/terraform-oci-registries/actions/workflows/format.yml/badge.svg)](https://github.com/abarrak/terraform-oci-registries/actions/workflows/format.yml) [![Docs](https://github.com/abarrak/terraform-oci-registries/actions/workflows/docs.yml/badge.svg)](https://github.com/abarrak/terraform-oci-registries/actions/workflows/docs.yml)
+
 This module provides ability to manage repositories in oracle cloud registry (OCIR).
 
 
