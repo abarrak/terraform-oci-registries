@@ -11,7 +11,7 @@ Or in the artifacts registry service in Oracle.
 
 ```hcl
 module "registries" {
-  source    = "registry.terraform.io/abarrak/oci-registires"
+  source    = "registry.terraform.io/abarrak/registries/oci"
   version   = "1.0.0"
 
   providers = {
