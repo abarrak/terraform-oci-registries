@@ -49,6 +49,10 @@ module "registries" {
 |------|---------|
 | <a name="provider_oci"></a> [oci](#provider\_oci) | >= 5.9.0 |
 
+## Resources
+
+| Name | Type |
+|------|------|
 
 ## Inputs
 
