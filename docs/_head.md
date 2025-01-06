@@ -32,6 +32,3 @@ module "registries" {
   ]
 }
 ```
-
-# License
-MIT.
