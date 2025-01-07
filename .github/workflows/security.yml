@@ -1,11 +1,11 @@
-name: tfsec-pr-commenter
+name: Security
 on:
   pull_request:
     branches: [main]
 
 jobs:
   tfsec:
-    name: tfsec PR commenter
+    name: Security
     runs-on: ubuntu-latest
 
     permissions:
