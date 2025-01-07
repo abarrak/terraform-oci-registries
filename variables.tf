@@ -1,3 +1,8 @@
+variable "tenancy_id" {
+  description = "The tenancy OCID."
+  type        = string
+}
+
 variable "compartment_id" {
   description = "The compartments OCID to create the resources in."
   type        = string
@@ -5,13 +10,13 @@ variable "compartment_id" {
 
 variable "generic_repositories" {
   description = "A list of the generic repositories to be created for holding artifacts."
-  type        = list(object({name = string, description = string, is_public = bool, is_immutable = bool}))
+  type        = list(object({ name = string, description = string, is_public = bool, is_immutable = bool }))
   default     = []
 }
 
 variable "container_repositories" {
   description = "A list of the container repositories to be created for holding container images."
-  type        = list(object({name = string, description = string, is_public = bool, is_immutable = bool}))
+  type        = list(object({ name = string, description = string, is_public = bool, is_immutable = bool }))
   default     = []
 }
 
