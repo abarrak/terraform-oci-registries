@@ -69,9 +69,9 @@ module "registries" {
 | Name | Description |
 |------|-------------|
 | <a name="output_artifacts_repositories_billing"></a> [artifacts\_repositories\_billing](#output\_artifacts\_repositories\_billing) | Total storage size in GBs that will be charged. |
-| <a name="output_artifacts_repositories_ids"></a> [artifacts\_repositories\_ids](#output\_artifacts\_repositories\_ids) | Total storage size in GBs that will be charged. |
+| <a name="output_artifacts_repositories_ids"></a> [artifacts\_repositories\_ids](#output\_artifacts\_repositories\_ids) | The OCIDs of provisioned artifacts repositories. |
 | <a name="output_container_repositories_billing"></a> [container\_repositories\_billing](#output\_container\_repositories\_billing) | Total storage size in GBs that will be charged. |
-| <a name="output_container_repositories_ids"></a> [container\_repositories\_ids](#output\_container\_repositories\_ids) | Total storage size in GBs that will be charged. |
+| <a name="output_container_repositories_ids"></a> [container\_repositories\_ids](#output\_container\_repositories\_ids) | The OCIDs of provisioned container repositories. |
 
 # License
 
