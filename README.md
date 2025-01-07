@@ -1,7 +1,7 @@
 <!-- BEGIN_TF_DOCS -->
 # Terraform OCI Registries
 
-[![Lints](https://github.com/abarrak/terraform-oci-registries/actions/workflows/format.yml/badge.svg)](https://github.com/abarrak/terraform-oci-registries/actions/workflows/format.yml) [![Docs](https://github.com/abarrak/terraform-oci-registries/actions/workflows/docs.yml/badge.svg)](https://github.com/abarrak/terraform-oci-registries/actions/workflows/docs.yml)
+[![Lints](https://github.com/abarrak/terraform-oci-registries/actions/workflows/format.yml/badge.svg)](https://github.com/abarrak/terraform-oci-registries/actions/workflows/format.yml) [![Docs](https://github.com/abarrak/terraform-oci-registries/actions/workflows/docs.yml/badge.svg)](https://github.com/abarrak/terraform-oci-registries/actions/workflows/docs.yml) [![Security](https://github.com/abarrak/terraform-oci-registries/actions/workflows/security.yml/badge.svg)](https://github.com/abarrak/terraform-oci-registries/actions/workflows/security.yml)
 
 This module provides ability to manage repositories in oracle cloud registry (OCIR).
 
@@ -39,9 +39,8 @@ module "registries" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | = 1.3.3 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.3 |
 | <a name="requirement_oci"></a> [oci](#requirement\_oci) | >= 5.9.0 |
-| <a name="requirement_random"></a> [random](#requirement\_random) | 3.5.1 |
 
 ## Providers
 
@@ -59,10 +58,11 @@ module "registries" {
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_compartment_id"></a> [compartment\_id](#input\_compartment\_id) | The compartments OCID to create the resources in. | `string` | n/a | yes |
-| <a name="input_container_repositories"></a> [container\_repositories](#input\_container\_repositories) | A list of the container repositories to be created for holding container images. | `list(object({name = string, description = string, is_public = bool, is_immutable = bool}))` | `[]` | no |
+| <a name="input_container_repositories"></a> [container\_repositories](#input\_container\_repositories) | A list of the container repositories to be created for holding container images. | `list(object({ name = string, description = string, is_public = bool, is_immutable = bool }))` | `[]` | no |
 | <a name="input_defined_tags"></a> [defined\_tags](#input\_defined\_tags) | Defined tags for this resource. Each key is predefined and scoped to a namespace. Example: {"Operations.CostCenter": "42"} | `map(string)` | `{}` | no |
-| <a name="input_generic_repositories"></a> [generic\_repositories](#input\_generic\_repositories) | A list of the generic repositories to be created for holding artifacts. | `list(object({name = string, description = string, is_public = bool, is_immutable = bool}))` | `[]` | no |
+| <a name="input_generic_repositories"></a> [generic\_repositories](#input\_generic\_repositories) | A list of the generic repositories to be created for holding artifacts. | `list(object({ name = string, description = string, is_public = bool, is_immutable = bool }))` | `[]` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Optional tags to attach to the resources. Each tag is a simple key-value pair with no predefined name, type, or namespace. Example: {"Department": "Finance"} | `map(string)` | `{}` | no |
+| <a name="input_tenancy_id"></a> [tenancy\_id](#input\_tenancy\_id) | The tenancy OCID. | `string` | n/a | yes |
 
 ## Outputs
 
